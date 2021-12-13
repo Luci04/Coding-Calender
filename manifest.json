@@ -1,0 +1,12 @@
+{
+    "name":"Coder's Calander",
+    "version":"0.0.1",
+    "manifest_version":2,
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "icons":{
+        "128":"logo.jpg"
+    },
+    "permissions":["activeTab"]
+}
