@@ -1,5 +1,5 @@
 {
-    "name":"Coder's Calander",
+    "name":"Coder's Timeline",
     "version":"0.0.1",
     "manifest_version":2,
     "browser_action":{
@@ -8,5 +8,5 @@
     "icons":{
         "128":"logo.jpg"
     },
-    "permissions":["activeTab"]
+    "permissions":["activeTab","storage"]
 }

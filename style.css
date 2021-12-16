@@ -7,6 +7,7 @@
 body {
   scrollbar-width: 2px;
   width: 300px;
+  /* height: 700px; */
   background-color: #fff;
   justify-content: center;
 }
@@ -17,6 +18,11 @@ body {
   background: #fff;
   color: #eee;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.display_tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #heading {
@@ -57,7 +63,6 @@ body {
   top: 0;
   left: -20px;
   height: 100%;
-  border: 1px dashed #aaa;
 }
 
 .box {
@@ -65,7 +70,7 @@ body {
   margin: 50px 0;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.2);
-  width: 200px;
+  width: 210px;
   position: relative;
   letter-spacing: 1px;
   border-radius: 5px;
@@ -78,7 +83,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: -20px;
+  left: -10px;
   height: 100%;
   border: 1px solid #ccc;
 }
@@ -102,7 +107,7 @@ body {
 }
 .box .title a {
   color: rgb(74, 144, 236);
-  font-size: 0.6rem;
+  font-size: 11px;
   text-transform: uppercase;
   margin-top: 5px;
 }
@@ -118,16 +123,16 @@ body {
 }
 .box .time span {
   position: absolute;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: #000;
 }
 .box .time span:first-child {
-  top: -10px;
+  top: -12px;
   left: -73px;
 }
 .box .time span:last-child {
-  top: 100%;
-  left: -67px;
+  top: 97%;
+  left: -72px;
 }
 
 ::-webkit-scrollbar {
