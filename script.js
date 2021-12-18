@@ -105,7 +105,7 @@ const sites_list = async () => {
     const response = await fetch('https://kontests.net/api/v1/sites')
 
     if (!response) {
-        alert("fucked");
+        return;
     }
 
     const data = await response.json();
@@ -162,6 +162,12 @@ function formatAMPM(date) {
     return strTime;
 }
 
+function format_date(d) {
+    d = new Date(d)
+    d = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear()
+    return d;
+}
+
 
 function default_structure(e) {
     return `<li class="box">
@@ -172,6 +178,11 @@ function default_structure(e) {
         <span>${formatAMPM(e.start_time)}</span>
         <span>${formatAMPM(e.end_time)}</span>
     </div>
+    <div class="time2">
+    <span>Start : ${format_date(e.start_time)}</span>
+    <br>
+    <span>End : ${format_date(e.end_time)}</span>
+</div>
 </li>`
 }
 

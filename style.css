@@ -5,7 +5,7 @@
 }
 
 body {
-  scrollbar-width: 2px;
+  scrollbar-width: 1px;
   width: 300px;
   /* height: 700px; */
   background-color: #fff;
@@ -66,7 +66,6 @@ body {
 }
 
 .box {
-  cursor: pointer;
   margin: 50px 0;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -106,8 +105,9 @@ body {
   top: 100%;
 }
 .box .title a {
+  font-weight: 600;
   color: rgb(74, 144, 236);
-  font-size: 11px;
+  font-size: 13px;
   text-transform: uppercase;
   margin-top: 5px;
 }
@@ -264,4 +264,9 @@ a {
 .todo-cmp__list li label input:checked + span::before {
   opacity: 1;
   transition: all 550ms ease-in-out;
+}
+
+.time2 {
+  color: black;
+  font-weight: 600;
 }
