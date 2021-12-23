@@ -66,23 +66,22 @@ body {
 }
 
 .box {
-  margin: 50px 0;
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.2);
+  margin: 50px -3px;
+  padding: 20px 20px;
+  border: 2px solid rgb(74, 144, 236);
   width: 210px;
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .box > span {
   content: "";
   position: absolute;
   top: 0;
-  left: -10px;
+  left: -15px;
   height: 100%;
   border: 1px solid #ccc;
 }
